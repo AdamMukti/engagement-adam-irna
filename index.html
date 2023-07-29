@@ -1,0 +1,101 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>The Engagement of Adam & Irna</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Alex+Brush&family=Hurricane&family=Playfair+Display:wght@500;600;700&family=Poppins:wght@500&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+
+</head>
+
+<body>
+    <div class="content">
+        <div class="min-vh-100 m-0 text-center d-flex flex-column justify-content-center align-items-center">
+            <section id="satu" class="animate__animated animate__zoomIn">
+                <p class="font-pd">THE ENGAGEMENT OF</p>
+                <p class="font-hr mb-0">Adam</p>
+                <p class="font-hr mb-0">&</p>
+                <p class="font-hr">Irna</p>
+                <p class="font-pd">Kepada sahabatku</p>
+                <p class="font-nama-tamu fw-semibold nama">Adnan Pandu</p>
+                <button type="button" class="btn btn-outline-light px-5 font-pd-btn open"><i
+                        class="fas fa-envelope me-1"></i> OPEN INVITATION</button>
+            </section>
+            <section id="dua" class="d-none animate__animated">
+                <p class="font-pd">SAVE THE DATE</p>
+                <p class="font-pd">FOR THE ENGAGEMENT OF</p>
+                <p class="font-ab my-4"> - Adam & Irna - </p>
+                <p class="font-pd">Sunday, 13 August 2023</p>
+                <p class="font-pd">at 01.30 PM</p>
+                <p class="font-pd">Jl. Raya Sukaurip No. 17 Sukaurip Balongan</p>
+                <p class="font-pd fw-bold">Dresscode : White </p>
+                <div class="card-text"><a href="https://goo.gl/maps/B7A9vWAkqTasrhuQ8" target="_blank" role="button"
+                        class="btn btn-outline-light btn-sm px-5 font-pd-btn"><i
+                            class="fas fa-map-marker-alt text-danger me-1"></i>
+                        OPEN IN
+                        MAPS</a></div>
+        </div>
+    </div>
+
+    </section>
+    <!-- Copyright -->
+    <!-- <div class="footer text-center py-3 text-secondary font-pop animate__animated animate__zoomIn"><small> Made
+                    with
+                    <i class="fas fa-heart text-danger animate__animated animate__heartBeat animate__infinite"></i>
+                    by
+                    <a target="_blank" class="text-decoration-none text-danger" id="credit"></a></small>
+
+            </div> -->
+    <!-- Copyright -->
+    </div>
+    </div>
+    <script>
+        const open = document.querySelector('.open');
+        const right = document.querySelector('.right');
+        const nama = document.querySelector('.nama');
+        const kotak = document.querySelector('.kotak');
+        const sectionSatu = document.getElementById('satu');
+        const sectionDua = document.getElementById('dua');
+
+        const url_string = document.URL;
+        const url = new URL(url_string);
+        let namaUndangan;
+
+        if (url.searchParams.get('to') != null) {
+            namaUndangan = url.searchParams.get('to');
+        } else {
+            namaUndangan = "Adam Mukti";
+        }
+
+        nama.innerHTML = namaUndangan;
+
+        open.addEventListener('click', function () {
+            // sectionSatu.classList.add('animate__slideOutUp')
+            sectionSatu.classList.add('d-none')
+            sectionDua.classList.add('animate__slideInUp')
+            sectionDua.classList.remove('d-none')
+        })
+
+        let footer = document.getElementById("credit");
+        footer.innerHTML = "Adam Mukti";
+        footer.href = "https://www.instagram.com/adamukti/";
+
+
+    </script>
+
+    <script src="https://kit.fontawesome.com/61e5120832.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
