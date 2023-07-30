@@ -2,7 +2,6 @@ html,
 body {
     height: 100vh;
     width: 100vw;
-    color: white !important;
 }
 
 .font-pd {
@@ -42,55 +41,59 @@ body {
     position: relative;
 }
 
-.box {
-    background-color: rgb(45, 204, 130);
-    border-radius: 30px;
-    padding: 16px;
-    width: 300px;
-}
-
-h1 {
-    font-family: 'Pacifico', cursive;
-    font-size: 36px;
-    /* font-weight: bold; */
-    background: linear-gradient(to bottom, #dbd0b6 0%, #cc9250 100%);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-}
-
-h3 {
-    color: #dba96b;
-    text-shadow: 0px 8px 10px rgba(0, 0, 0, 0.2);
-}
-
-.mt-10 {
-    margin-top: 100px;
-}
-
-.mt-14 {
-    margin-top: 140px;
-}
-
-.kotak {
-    background-color: #cc9250;
-    color: white;
-    border-radius: 30px;
-    margin-top: 60px;
-    margin-left: auto;
-    margin-right: auto;
-    padding: 12px;
-    width: 300px;
-    text-align: center;
-    box-shadow: 0px 10px 20px #cc92508e;
-}
-
-.tombol {
-    position: absolute;
-    bottom: 0;
-    margin-bottom: 100px;
-}
-
 .footer {
     position: absolute;
     bottom: 0;
+}
+
+.floating-button-container {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+}
+
+.floating-circle-button {
+    display: block;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: #F3DEBA;
+    color: #354259;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    text-decoration: none;
+}
+
+.floating-circle-button:hover {
+    background-color: #f2d5a5;
+}
+
+.btn-custom {
+    background-color: #F3DEBA;
+    color: #354259;
+    border: none;
+    border-radius: 10px;
+    padding: 10px 20px;
+    font-size: 16px;
+}
+
+.btn-custom:hover {
+    background-color: #f2d5a5;
+}
+
+.btn-outline-custom {
+    background-color: transparent;
+    color: #F3DEBA;
+    border: 2px solid #F3DEBA;
+    border-radius: 100px;
+    padding: 5px 10px;
+    font-size: 12px;
+}
+
+.btn-outline-custom:hover {
+    background-color: #F3DEBA;
+    color: #354259;
 }
