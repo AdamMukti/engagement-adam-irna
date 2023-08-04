@@ -3,25 +3,38 @@ body {
     height: 100vh;
     width: 100vw;
 } */
-
-#dua{
-    color: #354259;
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
 }
 
-.font-pd {
+
+#dua {
+    color: #7C7A70;
+}
+
+.font-pd-title {
     font-family: 'Playfair Display', serif !important;
     font-size: 16px;
     letter-spacing: 2px;
-    /* color: #354259; */
+    /* color: #7C7A70; */
+}
+.font-pd {
+    font-family: 'Playfair Display', serif !important;
+    font-size: 12px;
+    letter-spacing: 2px;
+    /* width: 300px; */
+    /* color: #7C7A70; */
 }
 
-.font-pd-btn {
+.font-pop-btn {
     font-family: 'Poppins', sans-serif !important;
 }
 
 .font-hr {
     font-family: 'Hurricane', cursive;
-    font-size: 40px;
+    font-size: 50px;
 }
 
 .font-nama-tamu {
@@ -36,21 +49,26 @@ body {
 
 .font-pop {
     font-family: 'Poppins', sans-serif;
-    font-size: 16px;
-    
+    font-size: 12px;
 }
 
-.font-ks{
-    font-family: 'Kaushan Script', cursive;
+.font-pop-8px {
+    font-family: 'Poppins', sans-serif;
+    font-size: 8px;
+}
+.font-ks {
+    font-family: 'Damion', cursive;
     font-size: 48px;
     font-weight: bold;
-    background: linear-gradient(180deg, rgba(104,127,169,1) 0%, rgba(81,99,132,1) 50%, rgba(53,66,89,1) 100%);
-	-webkit-background-clip: text;
-	-webkit-text-fill-color: transparent;
+    color: #7C7A70;
+
+    /* background: linear-gradient(180deg, rgba(104, 127, 169, 1) 0%, rgba(81, 99, 132, 1) 50%, rgba(53, 66, 89, 1) 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent; */
 }
 
 .bg-depan {
-    background-image: url('bg.jpg');
+    background-image: url('bg2.png');
     background-size: cover;
     background-position: center center;
     position: relative;
@@ -73,7 +91,7 @@ body {
     height: 40px;
     border-radius: 50%;
     background-color: #F3DEBA;
-    color: #354259;
+    color: #7C7A70;
     font-size: 16px;
     border: none;
     cursor: pointer;
@@ -87,16 +105,26 @@ body {
 }
 
 .btn-custom {
-    background-color: #F3DEBA;
-    color: #354259;
+    background-color: #F5F0BB;
+    color: #7C7A70;
     border: none;
-    border-radius: 100px;
-    padding: 5px 10px;
+    
     font-size: 12px;
 }
 
 .btn-custom:hover {
-    background-color: #f2d5a5;
+    background-color: #e2ddab;
+}
+.btn-custom-ya {
+    background-color: #F5F0BB;
+    color: #7C7A70;
+    border: none;
+    font-size: 12px;
+    width: 80px;
+}
+
+.btn-custom-ya:hover {
+    background-color: #e2ddab;
 }
 
 .btn-outline-custom {
@@ -110,23 +138,24 @@ body {
 
 .btn-outline-custom:hover {
     background-color: #F3DEBA;
-    color: #354259;
+    color: #7C7A70;
 }
 
-.bg-flower-1{
-    background-image: url('bg_flower_1.jpg');
+.bg-flower-1 {
+    background-image: url('bg_flower_3.jpg');
     background-size: cover;
     background-position: center center;
     position: relative;
     height: 500px;
 }
-.bg-flower-2{
-    background-image: url('bg_flower_2.jpg');
+
+.bg-flower-2 {
+    background-image: url('bg_flower_4.png');
     background-size: cover;
     background-position: center center;
     position: relative;
     height: 500px;
-    
+
 }
 
 li {
@@ -137,17 +166,17 @@ li {
     padding: 20px 0px;
     /* text-transform: uppercase; */
     background-color: #F3DEBA;
-    color: #354259;
+    color: #7C7A70;
     border-radius: 20px;
     width: 70px;
-  }
-  
-  li span {
+}
+
+li span {
     display: block;
     font-size: 24px;
-  }
-  
-  /* @media all and (max-width: 768px) {
+}
+
+/* @media all and (max-width: 768px) {
     h1 {
       font-size: calc(1.5rem * var(--smaller));
     }
@@ -160,3 +189,9 @@ li {
       font-size: calc(3.375rem * var(--smaller));
     }
   } */
+
+  .custom-box {
+    background-color: #F5F0BB;
+    border-radius: 10px;
+    width: 70px;
+  }

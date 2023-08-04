@@ -45,15 +45,18 @@ if (url.searchParams.get('to') != null) {
 nama.innerHTML = namaUndangan;
 
 open.addEventListener('click', function () {
+    sectionDua.classList.remove('d-none');
+    var access = document.getElementById("dua");
+    access.scrollIntoView({ behavior: 'smooth' }, true);
     audio.play();
-    sectionSatu.classList.add('d-none')
-    sectionDua.classList.add('animate__slideInUp')
-    sectionDua.classList.remove('d-none')
+    open.classList.add('d-none')
+    // sectionDua.classList.add('animate__slideInUp')
     floatingButtonContainer.classList.remove('d-none')
     // content.style.backgroundImage = `url(bg_flower.jpg)`;
     // document.body.style.color = '#354259';
     // copyright.classList.remove('text-white');
     // copyright.style.color = 'blue';
+
 });
 
 btnAudio.addEventListener("click", function () {

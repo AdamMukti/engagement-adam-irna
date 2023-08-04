@@ -10,7 +10,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
-        href="https://fonts.googleapis.com/css2?family=Alex+Brush&family=Hurricane&family=Kaushan+Script&family=Playfair+Display:wght@500;600;700&family=Poppins:wght@500&display=swap"
+        href="https://fonts.googleapis.com/css2?family=Alex+Brush&family=Damion&family=Hurricane&family=Kaushan+Script&family=Playfair+Display:wght@500;600;700&family=Poppins:wght@500&display=swap"
         rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
     <link rel="stylesheet" href="style.css">
@@ -20,23 +20,26 @@
 <body>
     <!-- <div class="conent"> -->
     <audio src="audio.mp3" id="audio"></audio>
-    <section id="satu" class="">
-        <div class="d-flex justify-content-center align-items-center vh-100 bg-depan">
-            <div class=" text-center text-white animate__animated animate__zoomIn">
-                <p class="font-pd">THE ENGAGEMENT OF</p>
+    <section id="satu" class="text-white">
+        <div class="d-flex flex-column text-center justify-content-center vh-100 bg-depan">
+            <div class="animate__animated animate__zoomIn">
+                <p class="font-pd-title">THE ENGAGEMENT OF</p>
                 <p class="font-hr mb-0">Adam</p>
+            </div>
+            <div class="animate__animated animate__zoomIn">
                 <p class="font-hr mb-0">&</p>
                 <p class="font-hr">Irna</p>
-                <p class="font-pd">Kepada Saudara/i</p>
-                <p class="font-nama-tamu fw-semibold nama font-nama-tamu">Adam</p>
-                <button type="button" class="btn btn-outline-custom px-5 font-pd-btn open"><i
+                <p class="font-pd mb-0">Kepada Saudara/i/bestieku</p>
+                
+                <p class="font-nama-tamu fw-semibold nama">Adam</p>
+                <button type="button" class="btn btn-outline-custom px-5 font-pop-btn open"><i
                         class="fas fa-envelope me-1"></i>
                     OPEN INVITATION</button>
             </div>
         </div>
     </section>
-    <section id="dua" class="d-none animate__animated">
-        <div class="d-flex justify-content-center align-items-center vh-100 bg-flower-1">
+    <section id="dua" class="d-noe animate__animated">
+        <div class="d-flex justify-content-center align-items-center vh-100 bg-flower-2">
             <div class=" text-center">
                 <p class="font-ks">ADAM</p>
                 <p class="font-ks">&</p>
@@ -45,32 +48,51 @@
             </div>
         </div>
         <div class="d-flex justify-content-center align-items-center vh-100 bg-flower-2">
-            <div class="text-center">
+            <div class="text-center w-75">
                 <p class="font-pd">SAVE THE DATE</p>
                 <p class="font-pd">FOR THE ENGAGEMENT OF</p>
                 <p class="font-ab my-4"> - Adam & Irna - </p>
-                <p class="font-pd">Sunday, 13 August 2023</p>
-                <p class="font-pd">at 01.30 PM</p>
-                <p class="font-pd text-wrap">Jl. Raya Sukaurip No. 17 Sukaurip Balongan</p>
-                <p class="font-pd fw-bold">Dresscode : White </p>
-                <div class="card-text"><a href="https://goo.gl/maps/B7A9vWAkqTasrhuQ8" target="_blank" role="button"
-                        class="btn btn-custom btn-sm px-5 font-pd-btn"><i
-                            class="fas fa-map-marker-alt text-danger me-1"></i>
-                        OPEN IN
-                        MAPS</a></div>
+                <p class="font-pd mb-0">SUNDAY, 13 AUGUST 2023</p>
+                <p class="font-pd">AT ONE O'CLOCK IN THE AFTERNOON</p>
+                <p class="font-pd mb-0">IRNA'S HOUSE</p>
+                <p class="font-pd text-wrap">JL. RAYA SUKAURIP NO. 17 SUKAURIP BALONGAN</p>
+                <a href="https://goo.gl/maps/B7A9vWAkqTasrhuQ8" target="_blank" role="button"
+                    class="btn btn-custom btn-sm px-4 font-pop-btn"><i class="fas fa-map-marker-alt  me-1"></i>
+                    Open in
+                    Maps</a>
+                <p class="font-pd fw-bold mt-3">DRESSCODE : WHITE</p>
             </div>
         </div>
-        <div id="timer" class="d-flex justify-content-cente align-items-center vh-100 bg-flower-1">
-            <div class="container mx-auto text-center">
-                <h1 class="font-pd">Lorem, ipsum dolor.</h1>
-                <div id="countdown" class="">
-                    <ul>
-                        <li><span id="days"></span>Days</li>
-                        <li><span id="hours"></span>Hours</li>
-                        <li><span id="minutes"></span>Minutes</li>
-                        <li><span id="seconds"></span>Seconds</li>
-                        <!-- <li><span id="seconds">12</span>Seconds</li> -->
-                    </ul>
+        <div id="timer" class="d-flex justify-content-center align-items-center vh-100 bg-flower-2">
+            <div class="text-center font-pd w-75">
+                <p class="text-wrap">Menuju Hari Bahagia dan Kami berharap Saudara/i menjadi bagian dari hari bahagia kami</p>
+                <div class="d-flex justify-content-center">
+                    <div class="m-1 py-3  custom-box ">
+                        <span id="days" class="d-block font-pop"></span>
+                        <span class="font-pop-8px">Day</span>
+                    </div>
+                    <div class="m-1 py-3 custom-box font-pop">
+                        <span id="hours" class="d-block"></span>
+                        <span class="font-pop-8px">Hours</span>
+                    </div>
+                    <div class="m-1 py-3 custom-box font-pop">
+                        <span id="minutes" class="d-block"></span>
+                        <span class="font-pop-8px">Minutes</span>
+                    </div>
+                    <div class="m-1 py-3 custom-box font-pop">
+                        <span id="seconds" class="d-block"></span>
+                        <span class="font-pop-8px">Seconds</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="vh-100 bg-flower-2 position-relative">
+            <div id="slideEmpat"
+                class="position-absolute top-50 start-50 translate-middle text-center animate__animated animate__fadeInDown animate__delay-2">
+                <p class="font-pd">Apakah Kalian Merestui?</p>
+                <div class="d-flex justify-content-between">
+                    <button id="tidak" class="btn btn-custom-ya font-pop-btn">Tidak</button>
+                    <button id="ya" class="btn btn-custom-ya font-pop-btn">Iya</button>
                 </div>
             </div>
         </div>
@@ -87,6 +109,26 @@
         <button id="btn-audio" class="floating-circle-button"><i class="fas fa-volume-up"></i></button>
     </div>
     <!-- </div> -->
+
+    <script>
+        function getRandomPosition(element) {
+            var x = document.body.offsetHeight - element.clientHeight;
+            var y = document.body.offsetWidth - element.clientWidth;
+            var randomX = Math.floor(Math.random() * 500);
+            var randomY = Math.floor(Math.random() * y);
+            return [randomX, randomY];
+        };
+        const slideEmpat = document.getElementById('slideEmpat');
+        const tidak = document.getElementById('tidak');
+        const ya = document.getElementById('ya');
+
+        tidak.addEventListener('click', function () {
+            slideEmpat.classList.remove('translate-middle', 'top-50', 'start-50');
+            var xy = getRandomPosition(slideEmpat);
+            slideEmpat.style.top = xy[0] + 'px';
+            slideEmpat.style.left = xy[1] + 'px';
+        });
+    </script>
 
     <script src="script.js"></script>
     <script src="https://kit.fontawesome.com/61e5120832.js" crossorigin="anonymous"></script>
