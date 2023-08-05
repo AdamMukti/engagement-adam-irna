@@ -1,3 +1,4 @@
+
 const open = document.querySelector('.open');
 const right = document.querySelector('.right');
 const nama = document.querySelector('.nama');
@@ -12,6 +13,11 @@ const audio = document.getElementById("audio");
 const url_string = document.URL;
 const url = new URL(url_string);
 const timer = document.getElementById('timer');
+const access = document.getElementById("dua");
+const slideEmpat = document.getElementById('slideEmpat');
+const tidak = document.getElementById('tidak');
+const ya = document.getElementById('ya');
+const terimakasih = document.getElementById('terimakasih');
 const second = 1000,
     minute = second * 60,
     hour = minute * 60,
@@ -46,17 +52,11 @@ nama.innerHTML = namaUndangan;
 
 open.addEventListener('click', function () {
     sectionDua.classList.remove('d-none');
-    var access = document.getElementById("dua");
     access.scrollIntoView({ behavior: 'smooth' }, true);
     audio.play();
     open.classList.add('d-none')
-    // sectionDua.classList.add('animate__slideInUp')
     floatingButtonContainer.classList.remove('d-none')
-    // content.style.backgroundImage = `url(bg_flower.jpg)`;
-    // document.body.style.color = '#354259';
-    // copyright.classList.remove('text-white');
-    // copyright.style.color = 'blue';
-
+    AOS.init();
 });
 
 btnAudio.addEventListener("click", function () {
@@ -69,7 +69,29 @@ btnAudio.addEventListener("click", function () {
     }
 });
 
-let footer = document.getElementById("credit");
+function getRandomPosition(element) {
+    var x = document.body.offsetHeight - element.clientHeight;
+    var y = document.body.offsetWidth - element.clientWidth;
+    var randomX = Math.floor(Math.random() * 500);
+    var randomY = Math.floor(Math.random() * y);
+    return [randomX, randomY];
+};
+
+
+tidak.addEventListener('click', function () {
+    slideEmpat.classList.remove('translate-middle', 'top-50', 'start-50');
+    var xy = getRandomPosition(slideEmpat);
+    slideEmpat.style.top = xy[0] + 'px';
+    slideEmpat.style.left = xy[1] + 'px';
+});
+
+ya.addEventListener('click', function () {
+    slideEmpat.classList.add('d-none');
+    terimakasih.classList.remove('d-none');
+    AOS.init();
+});
+
+const footer = document.getElementById("credit");
 footer.innerHTML = "Adam Mukti";
 footer.href = "https://www.instagram.com/adamukti/";
 
