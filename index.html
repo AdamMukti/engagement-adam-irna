@@ -22,15 +22,14 @@
     <audio src="audio.mp3" id="audio"></audio>
     <section id="satu" class="text-white">
         <div class="d-flex flex-column text-center justify-content-center vh-100 bg-depan">
-            <div class="animate__animated animate__zoomIn">
+            <div class="animate__animated animate__zoomIn mb-5">
                 <p class="font-pd-title">THE ENGAGEMENT OF</p>
-                <p class="font-hr mb-0">Adam</p>
             </div>
             <div class="animate__animated animate__zoomIn">
+                <p class="font-hr mb-0">Adam</p>
                 <p class="font-hr mb-0">&</p>
                 <p class="font-hr">Irna</p>
-                <p class="font-pd mb-0">Kepada Saudara/i/bestieku</p>
-                
+                <p class="font-pd mb-0 mt-5">Kepada Saudara/i/bestieku</p>
                 <p class="font-nama-tamu fw-semibold nama">Adam</p>
                 <button type="button" class="btn btn-outline-custom px-5 font-pop-btn open"><i
                         class="fas fa-envelope me-1"></i>
@@ -39,21 +38,22 @@
         </div>
     </section>
     <section id="dua" class="d-noe animate__animated">
-        <div class="d-flex justify-content-center align-items-center vh-100 bg-flower-2">
+        <div class="d-flex justify-content-center align-items-center vh-100 bg-polos">
             <div class=" text-center">
-                <p class="font-ks">ADAM</p>
-                <p class="font-ks">&</p>
-                <p class="font-ks">IRNA</p>
+                <img src="flower.png" alt="" class="flower">
+                <p class="font-pd-36px">ADAM</p>
+                <p class="font-pd-36px">&</p>
+                <p class="font-pd-36px">IRNA</p>
                 <p class="font-pd">13 | 08 | 2023</p>
             </div>
         </div>
-        <div class="d-flex justify-content-center align-items-center vh-100 bg-flower-2">
-            <div class="text-center w-75">
+        <div class="d-flex justify-content-center align-items-center vh-100 bg-flower">
+            <div class="text-center container">
                 <p class="font-pd">SAVE THE DATE</p>
                 <p class="font-pd">FOR THE ENGAGEMENT OF</p>
-                <p class="font-ab my-4"> - Adam & Irna - </p>
+                <p class="font-ab my-4">Adam & Irna</p>
                 <p class="font-pd mb-0">SUNDAY, 13 AUGUST 2023</p>
-                <p class="font-pd">AT ONE O'CLOCK IN THE AFTERNOON</p>
+                <p class="font-pd">AT 01.30PM</p>
                 <p class="font-pd mb-0">IRNA'S HOUSE</p>
                 <p class="font-pd text-wrap">JL. RAYA SUKAURIP NO. 17 SUKAURIP BALONGAN</p>
                 <a href="https://goo.gl/maps/B7A9vWAkqTasrhuQ8" target="_blank" role="button"
@@ -63,9 +63,9 @@
                 <p class="font-pd fw-bold mt-3">DRESSCODE : WHITE</p>
             </div>
         </div>
-        <div id="timer" class="d-flex justify-content-center align-items-center vh-100 bg-flower-2">
+        <div id="timer" class="d-flex justify-content-center align-items-center vh-100 bg-flower">
             <div class="text-center font-pd w-75">
-                <p class="text-wrap">Menuju Hari Bahagia dan Kami berharap Saudara/i menjadi bagian dari hari bahagia kami</p>
+                <p class="text-wrap">Menuju Hari Bahagia Kami</p>
                 <div class="d-flex justify-content-center">
                     <div class="m-1 py-3  custom-box ">
                         <span id="days" class="d-block font-pop"></span>
@@ -84,9 +84,10 @@
                         <span class="font-pop-8px">Seconds</span>
                     </div>
                 </div>
+                <p class="text-wrap mt-3">Kami berharap Saudara/i menjadi bagian dari hari bahagia kami</p>
             </div>
         </div>
-        <div class="vh-100 bg-flower-2 position-relative">
+        <div class="vh-100 bg-flower position-relative">
             <div id="slideEmpat"
                 class="position-absolute top-50 start-50 translate-middle text-center animate__animated animate__fadeInDown animate__delay-2">
                 <p class="font-pd">Apakah Kalian Merestui?</p>
@@ -95,16 +96,22 @@
                     <button id="ya" class="btn btn-custom-ya font-pop-btn">Iya</button>
                 </div>
             </div>
-        </div>
-    </section>
-    <!-- <div class="footer text-center py-3 font-pop text-secondary animate__animated animate__zoomIn"><small> Made
+            <div id="terimakasih" class="d-none position-absolute top-50 start-50 translate-middle text-center">
+                <p class="font-pd">Terima Kasih</p>
+                <p class="font-pd">Kami Tunggu di Hari Kebahagiaan Kami.</p>
+                <p class="font-pd mt-5">Kami yang Berbahagia,</p>
+                <p class="font-pd-ai">Adam & Irna</p>
+            </div>
+
+            <div class="  position-absolute top-100 start-50 translate-middle py-3 font-pop animate__animated animate__zoomIn"><small> Made
                     with
                     <i class="fas fa-heart text-danger animate__animated animate__heartBeat animate__infinite"></i>
                     by
                     <a target="_blank" class="text-decoration-none text-danger font-pop" id="credit"></a></small>
+            </div>
+        </div>
+    </section>
 
-            </div> -->
-    <!-- </div> -->
     <div class="floating-button-container d-none">
         <button id="btn-audio" class="floating-circle-button"><i class="fas fa-volume-up"></i></button>
     </div>
@@ -121,12 +128,17 @@
         const slideEmpat = document.getElementById('slideEmpat');
         const tidak = document.getElementById('tidak');
         const ya = document.getElementById('ya');
+        const terimakasih = document.getElementById('terimakasih');
 
         tidak.addEventListener('click', function () {
             slideEmpat.classList.remove('translate-middle', 'top-50', 'start-50');
             var xy = getRandomPosition(slideEmpat);
             slideEmpat.style.top = xy[0] + 'px';
             slideEmpat.style.left = xy[1] + 'px';
+        });
+        ya.addEventListener('click', function () {
+            slideEmpat.classList.add('d-none');
+            terimakasih.classList.remove('d-none');
         });
     </script>
 
